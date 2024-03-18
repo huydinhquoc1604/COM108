@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-void kiemTraTuoiNguoiYeu(int tuoi) {
+int kiemTraTuoiNguoiYeu(int tuoi) {
     if (tuoi > 50)
         printf("Nguoi yeu se dong tien hoc lai cho ban.\n");
     else if (tuoi > 35)
@@ -12,13 +12,13 @@ void kiemTraTuoiNguoiYeu(int tuoi) {
     else
         printf("Ban nen can than.\n");
 }
-void kiemTraNamNhuan(int nam) {
+int kiemTraNamNhuan(int nam) {
     if ((nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0))
         printf("Day la nam nhuan, thang 2 co 29 ngay.\n");
     else
         printf("Day khong phai nam nhuan, thang 2 co 28 ngay.\n");
 }
-void tinhCacPhepTinh(float a, float b) {
+int tinhCacPhepTinh(float a, float b) {
     printf("Tong cua %0.2f va %0.2f la: %0.2f\n", a, b, a + b);
     printf("Ket qua cua %0.2f^3 * %0.2f la: %0.2f\n", a, b, pow(a, 3) * b);
     if (b >= 0)
@@ -26,7 +26,7 @@ void tinhCacPhepTinh(float a, float b) {
     else
         printf("Khong the tinh can bac 2 cua mot so am.\n");
 }
-void soSanhHaiSo(float a, float b) {
+int soSanhHaiSo(float a, float b) {
     if (a > b)
         printf("So lon la: %0.2f\nSo be la: %0.2f\n", a, b);
     else if (a < b)
@@ -39,7 +39,7 @@ int main() {
     float a, b;
     int tuoi, nam;
     do {
-        printf("\nMenu:\n");
+        printf("Menu:\n");
         printf("1. Kiem tra tuoi nguoi yeu\n");
         printf("2. Kiem tra nam nhuan\n");
         printf("3. May tinh\n");

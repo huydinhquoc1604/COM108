@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 //Khai bao
-void tinhHocLuc();
-void giaiPhuongTrinhBacMot();
-void giaiPhuongTrinhBacHai();
-void tinhTienDien();
+int tinhHocLuc();
+int giaiPhuongTrinhBacMot();
+int giaiPhuongTrinhBacHai();
+float tinhTienDien();
 
 int main() {
     int choice;
     //Nhap
-    printf("MENU CHUONG TRINH\n");
+    printf("===MENU CHUONG TRINH===\n");
     printf("1. Tinh hoc luc sinh vien\n");
     printf("2. Giai phuong trinh bac 1\n");
     printf("3. Giai phuong trinh bac 2\n");
@@ -35,13 +35,13 @@ int main() {
     }
     return 0;
 }
-void tinhHocLuc() {
+int tinhHocLuc() {
 }
-void giaiPhuongTrinhBacMot() {
+int giaiPhuongTrinhBacMot() {
 }
 
-void giaiPhuongTrinhBacHai() {
+int giaiPhuongTrinhBacHai() {
 }
-void tinhTienDien() {
+float tinhTienDien() {
 }
 

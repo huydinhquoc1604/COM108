@@ -2,10 +2,10 @@
 float tinhDiemTB(float toan, float van, float anh) {
     return (toan * 3 + van * 2 + anh) / 6;
 }
-void xepLoaiHocLuc(float diemTB) {
+float xepLoaiHocLuc(float diemTB) {
     if (diemTB < 0 || diemTB > 10) {
         printf("Diem khong hop le.\n");
-        return;
+        return 0;
     }
     if (diemTB >= 9)
         printf("Hoc sinh xuat sac.\n");
@@ -22,7 +22,7 @@ void xepLoaiHocLuc(float diemTB) {
     else
         printf("Kem.\n");
 }
-void hocBong(float diemTB, float diemRL) {
+int hocBong(float diemTB, float diemRL) {
     if (diemTB > 8 && diemRL > 80)
         printf("Ban duoc hoc bong 500.000d.\n");
     else
@@ -32,7 +32,7 @@ int main() {
     int choice;
     float toan, van, anh, diemTB, diemRL;
     do {
-        printf("\nMenu:\n");
+        printf("Menu:\n");
         printf("1. Xep loai hoc luc\n");
         printf("2. Hoc bong\n");
         printf("3. Thoat\n");
